@@ -3,7 +3,8 @@ Api permettant la communication entre le serveur et le(s) client(s).
 
 #Installation
 
-Download le repo, créer une base de donnée (nommé *"iserver"* pour utiliser la conf. par défault) puis créer une table *users* avec les colonnes suivantes (*nom* / *type*) : 
+Download le repo, le placé dans un dossier d'un serveur web (Apache/Nginx avec php et la réécriture d'url).
+Ensuite, créer une base de donnée (nommé *"iserver"* pour utiliser la conf. par défault) puis créer une table *users* avec les colonnes suivantes (*nom* / *type*) : 
   - id / INT(11) AUTOINCREMENT;
   - login / VARCHAR(255);
   - email / VARCHAR(255);
