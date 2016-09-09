@@ -50,7 +50,7 @@ Les appelles à l'api se font en get avec la syntax suivante : <br>
    ###La réponse sera :
    {"api":"iServer API","version":"1.2.4","timestamp":1469721609,"status":"success","user":{"login":"EG Julien"},"response":{"data_posted":"blue::on$"}}
   
-  La réponse n'est pas vraiment utile dans ce cas, il peut juste permettre de vérifier que la commande à été executé coorectement. Nous pourions aussi imaginer un système d'historique coté client dans ce cas le *timestamp* pourrait devenir utile ainsi que le paramètre *login* afin de savoir qui à fait quoi et quand.
+  La réponse n'est pas vraiment utile dans ce cas, il peut juste permettre de vérifier que la commande à été executé corectement. Nous pourions aussi imaginer un système d'historique coté client dans ce cas le *timestamp* pourrait devenir utile ainsi que le paramètre *login* afin de savoir qui à fait quoi et quand.
   
   ##Sécurité ?
   
