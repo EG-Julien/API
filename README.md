@@ -1,6 +1,10 @@
 # API
 Api permettant la communication entre le serveur et le(s) client(s).
 
+#Installation
+
+Download le repo, créer une base de donnée (nommé *"iserver"* pour utiliser la conf. par défault) puis créer une table *users* avec les colonnes suivantes (*nom* / *type*) : id / INT(11) AUTOINCREMENT, login / VARCHAR(255), email / VARCHAR(255), password / VARCHAR(255) - (SHA1), last_login / DATETIME, last_ip / VARCHAR(255).
+
 #Fonctionnement
 
 Les appelles à l'api se font en get avec la syntax suivante : <br>
