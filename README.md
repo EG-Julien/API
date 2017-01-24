@@ -39,7 +39,27 @@ Les appelles à l'api se font en get avec la syntax suivante : <br>
    GET iserver.gg:3000 / get / json / all 
    
    ###Donne : <br>
-  	{"api":"iServer API","version":"1.2.4","timestamp":1469720885,"status":"success","response":{"degrees":"27.62","light":"2.56","door":"41.38","tension":"5.00","a_status":"0","b_status":"0","blue":"0","red":"1","green":"0","white":"0"}}
+  	```json
+    {
+    "api":"iServer API",
+    "version":"1.2.4",
+    "timestamp":1469720885,
+    "status":"success",
+    "response":    
+       {
+           "degrees":"27.62",
+           "light":"2.56",
+           "door":"41.38",
+           "tension":"5.00",
+           "a_status":"0",
+           "b_status":"0",
+           "blue":"0",
+           "red":"1",
+           "green":"0",
+           "white":"0"
+       }
+    }
+    ```
   
   Ce qui nous intéresse vraiment est le tableau "response" qui contient toutes les informations nécessaire comme la température (degrees), l'ouverture de la porte (door en cm) ou encore l'état de l'alarme (a_status) et du buzzer (b_status).
   
@@ -48,8 +68,19 @@ Les appelles à l'api se font en get avec la syntax suivante : <br>
   
   Voir le repo App pour un exemple d'utilisation de l'API : https://github.com/EG-Julien/App
    ###La réponse sera :
-   {"api":"iServer API","version":"1.2.4","timestamp":1469721609,"status":"success","user":{"login":"EG Julien"},"response":{"data_posted":"blue::on$"}}
-  
+   ```json
+{
+    "api":"iServer API",
+    "version":"1.2.4",
+    "timestamp":1469720885,
+    "status":"success",
+    "user" : {"login": "EG Julien"},
+    "response":
+      {
+        "data_posted": "blue::on$"
+      }
+}
+```
   La réponse n'est pas vraiment utile dans ce cas, il peut juste permettre de vérifier que la commande à été executé corectement. Nous pourions aussi imaginer un système d'historique coté client dans ce cas le *timestamp* pourrait devenir utile ainsi que le paramètre *login* afin de savoir qui à fait quoi et quand.
   
   ##Sécurité ?
